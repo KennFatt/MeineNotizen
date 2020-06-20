@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+$color-accent: #FC86AA;
+
+body {
+    font-family: "Ubuntu";
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    margin: 25px auto;
+    background: #D8DCD6;
+    border-radius: 5px;
+    box-shadow: rgba($color: #000000, $alpha: 0.5) 0px 0px 25px;
+    min-width: 50%;
+    min-height: fit-content;
+    max-width: fit-content;
+
+    ::placeholder {
+        color: $color-accent;
+        opacity: 1;
+    }
+
+    input[type="text"] {
+        border: solid 1px $color-accent;
+        background: #4C4E4F;
+        text-indent: 10px;
+        border-radius: 5px;
+        min-height: 24px;
+        min-width: 15rem;
+
+        color: $color-accent;
+
+        // Outline is ugly on mobile devices.
+        outline: none;
+    }
+
+    .header, .footer {
+        background: #3C4142;
+        padding: 25px 0;
+    }
+
+    .header {
+        border-radius: 5px 5px 0 0;
+        text-align: center;
+
+        #banner-name, #banner-description {
+            color: $color-accent;
+            margin: 0 50px;
+        }
+
+        #banner-name {
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-top: 25px;
+        }
+
+        #banner-description {
+            font-size: 22px;
+            font-weight: 400;
+            margin-bottom: 35px;
+        }
+    }
+
+    .notes {
+        padding: 25px 0;
+        margin: 0;
+
+        .note-item {
+            text-align: center;
+            margin: 25px;
+            list-style: none;
+            border-radius: 5px;
+            background-color: #fff;
+            padding: 10px;
+            border: solid 1px rgba($color: #000000, $alpha: 0.0);
+            transition: border .5s;
+
+            .note-title {
+                display: inline-block;
+            }
+
+            &:hover {
+                border: solid 1px $color-accent;
+                cursor: pointer;
+            }
+
+            input[type="checkbox"] {
+                float: left;
+                position: relative;
+                height: 20px;
+                width: 20px;
+                appearance: none;
+                border: solid 1px $color-accent;
+                outline: none;
+                border-radius: 5px;
+                transition: background .2s;
+                cursor: pointer;
+
+                &:hover {
+                    background: rgba($color: $color-accent, $alpha: 0.25);
+                }
+
+                &:checked {
+                    background: $color-accent;
+                }
+            }
+        }
+    }
+
+    .footer {
+        border-radius: 0 0 5px 5px;
+        text-align: center;
+        padding-top: 25px;
+        padding-bottom: 25px;
+
+        button {
+            background: $color-accent;
+            border: none;
+            border-radius: 5px;
+            min-height: 28px;
+            color: #4C4E4F;
+            outline: none;
+        }
+    }
+}

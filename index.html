@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Meine Note</title>
+
+		<link rel="stylesheet" href="static/style.css">
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<div class="header">
+				<h1 id="banner-name">Meine Notizen</h1>
+				<p id="banner-description">Daily schedule and notes.</p>
+
+				<form id="form-search-note">
+					<input type="text" name="search" id="search-bar" placeholder="Search note...">
+				</form>
+			</div>
+
+			<ul class="notes">
+				<li class="note-item">
+					<input type="checkbox" class="note-checkbox">
+					<span class="note-title">Do homework</span>
+				</li>
+				<li class="note-item">
+					<input type="checkbox" class="note-checkbox">
+					<span class="note-title">Drink some water</span>
+				</li>
+				<li class="note-item">
+					<input type="checkbox" class="note-checkbox">
+					<span class="note-title">Take a bath</span>
+				</li>
+			</ul>
+
+			<div class="footer">
+				<form id="form-add-note">
+					<input type="text" name="add" id="note-add-bar" placeholder="New note...">
+					<button>Add</button>
+				</form>
+			</div>
+		</div>
+
+		<script src="js/app.js"></script>
+	</body>
+
+</html>
